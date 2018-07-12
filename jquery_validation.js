@@ -14,7 +14,6 @@ var Validation = {
 		var loginForm = $("#loginform");
 		if (loginForm.length){
 			loginForm.validate({
-			//	errorClass: errorClassGlobal,
 				rules: {
 					login_password: "required",
 					login_email: {
@@ -42,7 +41,6 @@ var Validation = {
 		var registerForm = $("#registerform");
 		if (registerForm.length){
 			registerForm.validate({
-				//errorClass: errorClassGlobal,
 				rules: {
 					register_name: "required",
 					register_nickname: "required",
@@ -88,7 +86,6 @@ var Validation = {
 		var remindForm = $("#remindform");
 		if (remindForm.length){
 			remindForm.validate({
-				//errorClass: errorClassGlobal,
 				rules: {
 					remind_email: {
 						required: true,
@@ -115,7 +112,6 @@ var Validation = {
 		var resetForm = $("#resetpassword");
 		if (resetForm.length){
 			resetForm.validate({
-				//errorClass: errorClassGlobal,
 				rules: {
 					reset_password: {
 						required: true,
@@ -148,7 +144,6 @@ var Validation = {
 		var addGroupForm = $("#addgroupform");
 		if (addGroupForm.length){
 			addGroupForm.validate({
-				//errorClass: errorClassGlobal,
 				rules: {
 					groupname: {
 						required: true,
