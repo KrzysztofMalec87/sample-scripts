@@ -1,7 +1,12 @@
-
+// validation build
 var Validation = {
-	init: function ()
+  init: function ()
 	{
+ /**
+  * You can easily turn off individual components.
+  * Just add two backslashes before component.
+  * Sample -> //Validation.formLoginValidation();
+ */
 		Validation.formLoginValidation();
 		Validation.formRegisterValidation();
 		Validation.formRemindsValidation();
@@ -10,6 +15,7 @@ var Validation = {
 	}, 
 
 	
+ // validation for login form
 	formLoginValidation: function () {
 		var loginForm = $("#loginform");
 		if (loginForm.length){
@@ -37,6 +43,7 @@ var Validation = {
 	},
 	
 	
+	// validation for registration form
 	formRegisterValidation: function () {
 		var registerForm = $("#registerform");
 		if (registerForm.length){
@@ -81,7 +88,7 @@ var Validation = {
 		}
 	},
 	
-	//------ validation for password reminder
+	// validation for password reminder form
 	formRemindsValidation: function () {
 		var remindForm = $("#remindform");
 		if (remindForm.length){
@@ -107,7 +114,7 @@ var Validation = {
 	},
 	
 	
-	//------ validation for reset password
+	// validation for reset password form
 	formResetValidation: function () {
 		var resetForm = $("#resetpassword");
 		if (resetForm.length){
@@ -139,7 +146,7 @@ var Validation = {
 	},
 	
 	
-	//------ add group - my account validation
+	// amy account - add group validation form
 	formAddGroupValidation: function () {
 		var addGroupForm = $("#addgroupform");
 		if (addGroupForm.length){
@@ -190,5 +197,5 @@ var Validation = {
 };
 
 
-// -- INIT VALIDATIONd
+// INIT VALIDATIONd
 Validation.init();
